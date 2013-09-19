@@ -1,0 +1,7 @@
+snippet guard
+	#ifndef ${1:`toupper(Filename('_$1_H', '_UNTITLED_H'))`}
+	#define $1
+
+	${2}
+
+	#endif
