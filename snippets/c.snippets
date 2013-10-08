@@ -1,5 +1,5 @@
 snippet guard
-	#ifndef ${1:`toupper(Filename('$1_H', 'UNTITLED_H'))`}
+	#ifndef ${1:`toupper(Filename(expand('%:p:h:t') . '_$1_H', 'UNTITLED_H'))`}
 	#define $1
 
 	${2}
